@@ -1,38 +1,152 @@
-.App {
+/* Styles for all */
+*{
+  margin: 0;
+}
+.center{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+.justify-content-lg-end{
+  justify-content: flex-end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style for product features */
+.heading{
+  border-bottom: 1px solid #eaeaea;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-right ul{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end; 
+  margin: 0;
+  padding: 0;
+}
+.top-right li{
+  list-style: none;
+  padding: 45px 30px 0 0;
+  font-size: medium;
+  font-weight: 600;
+  font-family: sans-serif;
+  color:gray;
+} 
+.top-left{
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* Style for testimonial */
+.testimonial{
+  background-color: aliceblue;
+}
+.topic{
+  text-align: center;
+}
+.top{
+  display: flex;
+}
+.col{
+  padding: 0 15px;
+}
+.testimonial-box{
+  background-color: white;
+  padding: 40px 50px;
+}
+.user-testimonial{
+  font-size: large;
+  color: black;
+  margin-top: 20px;
+  /* padding: 0 100px 0 0;  */
+}
+.user-name{
+  margin-top: 10px;
+  font-size: x-large;
+  font-family: Poppins;
+  /* margin-bottom: 50px; */
+}
+.user-name span{
+  color: rgb(72, 20, 20);
+  font-size: medium;
+}
+.user-image{
+  object-fit: cover;
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.user-photo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user-rating{
+  display: flex;
+  padding: 20px 0 10px;
+  font-size: x-large;
+}
+.slick-prev:before, .slick-next:before {
+  background-color: #003893;
+  /* height: 90px;
+  width: 90px; */
+  border-radius: 50%;
+}
+/* .slick-dots:before{
+  font-size: large;
+} */
+
+
+/* Style for media query */
+@media(max-width: 999px){ 
+  /* For product features */
+  .top-right li{
+    padding: 0 20px 20px 0;
+    font-size: small;
+  } 
+  .top-left p{
+    font-size: small;
   }
-  to {
-    transform: rotate(360deg);
+  /* For testimonial */
+  .user-rating{
+    padding: 10px 0;
   }
+  .user-image{
+    width: 80px;
+    height: 80px;
+  }
+  
+}
+@media(max-width: 992px){
+   .user-rating{
+     padding: 1rem 0;
+   }
+   .testimonial-box{
+     background-color: white;
+     padding: 20px 20px;
+   }
+   .col{
+     padding: 0 8px;
+   }
+  
+ }
+@media(max-width: 770px){
+ /* for product feature */
+  .top-right li{
+    padding: 0 15px 15px 0;
+    font-size: x-small;
+  } 
+  .user-rating{
+    padding: 1rem 0;
+  }
+  .testimonial-box{
+    background-color: white;
+    padding: 20px 20px;
+  }
+  .col{
+    padding: 0 8px;
+  }
+ 
 }
