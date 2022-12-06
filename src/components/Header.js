@@ -25,6 +25,9 @@ function Header() {
           <Link to='/faq'>
             <a class="navbar-brand" >FAQ</a>
           </Link>
+          <Link to='/contact'>
+            <a class="navbar-brand" >Contact</a>
+          </Link>
           <Link to='/cart'>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-start justify-content-lg-end">
               <li class="nav-item">

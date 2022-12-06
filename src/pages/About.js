@@ -5,6 +5,7 @@ import { FaFacebook, FaInstagram, FaPrayingHands, FaTwitter } from 'react-icons/
 import { FiHeart, FiPlus } from 'react-icons/fi';
 import { GrGroup } from 'react-icons/gr';
 import CountUp from 'react-countup';
+import Testimonial from '../components/Testimonial';
 
 function About() {
 
@@ -226,6 +227,10 @@ function About() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className='testimonial mt-5'>
+        <Testimonial/>
       </div>
 
     </div>

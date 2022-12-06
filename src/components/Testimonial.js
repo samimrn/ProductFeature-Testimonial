@@ -31,7 +31,7 @@ function Testimonial() {
     ]
   };
   return (
-    <div className='testimonial py-5 '>
+    <div className='testimonial py-5 mb-5'>
       <div className='container'>
         <div className='row'>
           <div className='topic'>
