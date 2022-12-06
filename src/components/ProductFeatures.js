@@ -1,11 +1,14 @@
 import React from 'react'
 import { Figure } from 'react-bootstrap'
 import { BiCheckShield } from 'react-icons/bi'
+import { VscHeart } from 'react-icons/vsc'
+import { BsCartPlus } from 'react-icons/bs'
+import { AiOutlineSearch } from 'react-icons/ai'
+import Product from './Product'
 
 function ProductFeatures() {
   return (
     <div className='featured'>
-
     <div className='product'>
       <div className='container'>
         <div className='heading row'>
@@ -30,19 +33,62 @@ function ProductFeatures() {
       <div className='container mt-4'>
         <div className='row'>
             <div className='col-lg-4 col-md-6'>
-              <Figure className='mb-45'>
-                <img className='img-fluid' src='images/pic1.jpg'></img>
-              </Figure>
+              <Product
+                id='1'
+                image='images/pic1.jpg'
+                title='Polaroid Camera'
+                prices={200}
+                quantity={3}
+              />
             </div>
             <div className='col-lg-4 col-md-6'>
-              <Figure className='mb-45'>
-                <img className='img-fluid' src='images/pic2.jpg'></img>
-              </Figure>            
+              <Product
+                id='2'
+                image='images/pic2.jpg'
+                title='Polaroid Camera'
+                prices={200}
+                quantity={3}
+                />        
             </div>
             <div className='col-lg-4 col-md-6'>
-              <Figure className='mb-45'>
-                <img className='img-fluid' src='images/pic3.jpg'></img>
-              </Figure>            
+              <Product
+                id='3'
+                image='images/pic3.jpg'
+                title='speaker'
+                prices={200}
+                quantity={3}
+                />      
+            </div>
+        </div>
+      </div>
+      <div className='container mt-2'>
+        <div className='row'>
+            <div className='col-lg-4 col-md-6'>
+            <Product
+              id='4'
+              image='images/pic1.jpg'
+              title='Polaroid Camera'
+              prices={200}
+              quantity={3}
+              />
+            </div>
+            <div className='col-lg-4 col-md-6'>
+              <Product
+                id='5'
+                image='images/pic2.jpg'
+                title='Earphone'
+                prices={200}
+                quantity={3}
+              />        
+            </div>
+            <div className='col-lg-4 col-md-6'>
+            <Product
+              id='6'
+              image='images/pic3.jpg'
+              title='Speaker'
+              prices={200}
+              quantity={3}
+              />        
             </div>
         </div>
       </div>
